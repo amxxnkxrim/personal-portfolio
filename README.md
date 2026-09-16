@@ -25,7 +25,7 @@ Visit my portfolio: [My Portfolio](YOUR-WEBSITE-LINK-HERE)
 
 ## 📬 Contact
 
-GitHub: [@YOUR-USERNAME](https://github.com/YOUR-USERNAME)
+GitHub: [@YOUR-USERNAME](https://github.com/amxxnkxrim)
 
 More links and contact information can be found on my portfolio website.
 
