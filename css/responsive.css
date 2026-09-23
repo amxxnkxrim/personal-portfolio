@@ -1,0 +1,262 @@
+/* Mobile responsiveness for all portfolio pages */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        padding: 18px 20px;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+        line-height: 1.1;
+    }
+
+    nav {
+        gap: 10px 18px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 0.7rem;
+    }
+
+    .hero,
+    .about-hero,
+    .about-template .about-page,
+    .projects-intro,
+    .contact-layout,
+    .expertise-switchboard {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 60px;
+    }
+
+    .hero-copy,
+    .hero-panel,
+    .about-hero-copy,
+    .about-visual,
+    .projects-intro-copy,
+    .projects-aside,
+    .contact-intro,
+    .contact-details,
+    .contact-form {
+        width: 100%;
+        max-width: none;
+    }
+
+    .hero-buttons,
+    .about-actions,
+    .projects-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .button,
+    .contact-submit {
+        width: 100%;
+        text-align: center;
+    }
+
+    .projects-grid,
+    .process-grid,
+    .education-grid,
+    .interest-grid,
+    .stats-section,
+    .contact-detail-list {
+        grid-template-columns: 1fr;
+    }
+
+    .interest-grid {
+        gap: 16px;
+    }
+
+    .timeline-steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .timeline-track {
+        display: none;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+
+    .form-field-half,
+    .form-field:not(.form-field-half),
+    .contact-submit,
+    .form-footnote {
+        grid-column: 1;
+    }
+
+    .footer-inner,
+    .footer-top,
+    .footer-bottom,
+    .about-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+}
+
+@media (max-width: 560px) {
+    body {
+        min-width: 320px;
+    }
+
+    header {
+        padding: 16px 18px;
+    }
+
+    nav {
+        gap: 8px 12px;
+    }
+
+    nav a {
+        font-size: 0.64rem;
+        letter-spacing: 0.05em;
+    }
+
+    .hero,
+    .about-template .about-page,
+    .projects-page,
+    .contact-page,
+    footer {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hero {
+        padding-top: 46px;
+        gap: 26px;
+    }
+
+    .hero-tag,
+    .section-kicker,
+    .timeline-hint,
+    .expertise-display-label,
+    .timeline-detail-label {
+        letter-spacing: 0.1em;
+        font-size: 0.56rem;
+    }
+
+    .hero h2,
+    .about-template h2,
+    .projects-intro-copy h2,
+    .contact-intro h2,
+    .section-heading h2 {
+        font-size: clamp(2rem, 9vw, 2.8rem);
+        line-height: 1.08;
+    }
+
+    .hero-panel,
+    .projects-aside,
+    .contact-status,
+    .contact-details,
+    .project-card,
+    .process-step,
+    .education-card,
+    .interest-card,
+    .expertise-display,
+    .timeline-detail,
+    .contact-form {
+        border-radius: 18px;
+    }
+
+    .project-card-copy,
+    .project-image,
+    .process-step,
+    .education-card,
+    .about-visual {
+        min-height: auto;
+    }
+
+    .interest-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .expertise-tabs {
+        border-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .expertise-tab {
+        min-height: 58px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .expertise-display {
+        min-height: 230px;
+        padding: 24px 18px;
+    }
+
+    .timeline-step span {
+        width: 42px;
+        height: 42px;
+        font-size: 0.62rem;
+    }
+
+    .timeline-step strong {
+        font-size: 0.52rem;
+    }
+
+    .timeline-detail {
+        margin-top: 18px;
+        padding: 22px 18px;
+    }
+
+    .about-template .stats-section {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px 10px;
+    }
+
+    .about-template .stat-item {
+        padding: 0 10px;
+    }
+
+    .about-template .stat-number {
+        font-size: 2rem;
+    }
+
+    .footer-tags,
+    .tag-list,
+    .project-tags {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .footer-copy,
+    .about-copy,
+    .projects-lede,
+    .contact-lead,
+    .contact-note,
+    .form-footnote,
+    .education-card p,
+    .process-step p,
+    .project-card-copy p {
+        font-size: 0.9rem;
+    }
+}
